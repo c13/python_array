@@ -2,16 +2,16 @@ def array_clean(s):
     """
     Function will clear array from long elements
     """
+    new = []
 
     for index in range(len(s)):
-        if len(s[index]) > 3:
-            print(s[index])
-            #s[index].pop
+        if len(s[index]) <= 3:
+            new.append(s[index])
 
-    pass
+    return new
 
-print(array_clean (["hello", "2", "world", ":-)"]))
+print(array_clean(["hello", "2", "world", ":-)"]))
 
-print(array_clean ([["1234", "1567", "-2", "computer science"]]))
+print(array_clean(["1234", "1567", "-2", "computer science"]))
 
-print(array_clean (["Russia", "Denmark", "Kazan"]))
+print(array_clean(["Russia", "Denmark", "Kazan"]))
